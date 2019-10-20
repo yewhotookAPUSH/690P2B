@@ -25,11 +25,9 @@ figure(2)
 set(2, 'units', 'normalized','outerposition', [0 0 1 1] );
 plot( d0_0, d0_1, 'b*', d1_0, d1_1, 'rd' );
 hold on
-plot( [0 10], [0 10], 'g' );
 grid on
 title( 'Mahalanobis Distance To Two Distributions');
 set(findall(2,'type','text'),'fontSize',14);
-
 legend( 'Points from Hay Bales', 'Points from Not Hay Bales' );
 xlabel( 'Distance from Distribution 1' );
 ylabel( 'Distance from Distribution 2' );

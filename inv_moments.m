@@ -12,15 +12,11 @@ else
 end
 image = padImage;
 [m, n] = size(padImage);
+
 Dx = [];Dy = [];
-tic
-% for k = 1:padM    
-%     Dx = [Dx; 1:padM];    
-%     Dy = [Dy  (1:padM)'];
-% end
 Dx = uint8(repmat(1:n, m ,1));
 Dy = uint8(repmat((1:n)',1,m));
-toc
+
 m00 = sum(sum(image));
 m10 = sum(sum(Dx.*image));
 m01 = sum(sum(Dy.*image));
